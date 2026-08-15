@@ -179,6 +179,7 @@ ul {
 }
 
 .nav-inner {
+  position: relative;
   max-width: var(--shell);
   margin: 0 auto;
   padding: 0 var(--space-lg);
@@ -192,16 +193,21 @@ ul {
   display: flex;
   align-items: center;
   gap: 0.55rem;
+  flex-shrink: 0;
+  min-width: 0;
   font-family: var(--font-display);
   font-weight: 700;
   font-size: 0.95rem;
   letter-spacing: -0.01em;
 }
 
+/* flex-basis + min-width, not just flex-shrink: as a flex item inside a
+   shrinking nav the avatar otherwise gets squeezed into a sliver. */
 .nav-logo .logo-img {
+  flex: 0 0 32px;
   width: 32px;
   height: 32px;
-  flex-shrink: 0;
+  min-width: 32px;
   border-radius: 50%;
   object-fit: cover;
   border: 1px solid var(--border);
@@ -211,6 +217,37 @@ ul {
   display: flex;
   align-items: center;
   gap: 0.15rem;
+}
+
+.nav-pages {
+  display: flex;
+  align-items: center;
+  gap: 0.15rem;
+}
+
+/* Hamburger — desktop hides it; the small-screen block below turns it on. */
+.nav-toggle {
+  display: none;
+  align-items: center;
+  justify-content: center;
+  padding: 0.45rem;
+  border: none;
+  border-radius: var(--radius-full);
+  background: transparent;
+  color: var(--text-secondary);
+  cursor: pointer;
+  transition: color var(--duration-fast) var(--ease-out),
+    background var(--duration-fast) var(--ease-out);
+}
+
+.nav-toggle:hover {
+  color: var(--text-primary);
+  background: rgba(0, 0, 0, 0.04);
+}
+
+.nav-toggle[aria-expanded="true"] {
+  color: var(--text-primary);
+  background: rgba(0, 0, 0, 0.06);
 }
 
 .nav-link {
@@ -1152,6 +1189,57 @@ section {
 
   .nav-divider {
     display: none;
+  }
+
+  /* Page links collapse into a dropdown; social icons stay inline. */
+  .nav-toggle {
+    display: inline-flex;
+  }
+
+  .nav-pages {
+    position: absolute;
+    top: calc(100% + 0.6rem);
+    right: var(--space-md);
+    z-index: 110;
+    flex-direction: column;
+    align-items: stretch;
+    gap: 0.1rem;
+    min-width: 168px;
+    padding: 0.35rem;
+    border: 1px solid var(--border);
+    border-radius: var(--radius-md);
+    background: var(--bg-surface);
+    box-shadow: var(--shadow-lg);
+  }
+
+  .nav-pages:not([data-open="true"]) {
+    display: none;
+  }
+
+  .nav-pages .nav-link {
+    padding: 0.55rem 0.75rem;
+    border-radius: var(--radius-sm);
+  }
+
+  .nav-pages .nav-link.active {
+    background: var(--accent-soft);
+    color: var(--accent);
+  }
+
+  /* Without JS the toggle can't fire, so keep the links inline and reachable. */
+  .no-js .nav-toggle {
+    display: none;
+  }
+
+  .no-js .nav-pages {
+    position: static;
+    display: flex;
+    flex-direction: row;
+    min-width: 0;
+    padding: 0;
+    border: none;
+    background: none;
+    box-shadow: none;
   }
 
   .quote-card,
