@@ -12,7 +12,19 @@ projects.html   Music League, Mixtape Hero, BYOK, Encrypted Blob Storage
 styles.css      All styling. Design tokens live in :root at the top.
 main.js         Scroll-reveal only. The site is fully readable without it.
 favicon.svg     Monogram mark.
+images/         Nav avatar, project marks, and the Mixtape Hero app screenshot.
 ```
+
+## Images
+
+`images/nathan.png` is the nav avatar. The project marks are the real app icons
+and company logos: `music-league.png` (App Store icon), `mixtape-hero.png`,
+`hashicorp.png`, `workiva.png`. `mixtape-hero-app.png` is the product screenshot
+on the projects page.
+
+The HashiCorp and Workiva marks are third-party trademarks, used here to
+identify past employers. Swap them for neutral glyphs if that ever becomes a
+concern.
 
 ## Running locally
 

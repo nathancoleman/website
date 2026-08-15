@@ -6,7 +6,7 @@
     <title>Projects | Nathan Coleman</title>
     <meta
       name="description"
-      content="Music League, Mixtape Hero, Bring Your Own Key, and encrypted blob storage — two consumer products and two pieces of enterprise infrastructure."
+      content="Music League, Mixtape Hero, Project Infragraph, Bring Your Own Key, and encrypted blob storage — two consumer products and three pieces of enterprise infrastructure."
     />
     <meta name="robots" content="index, follow" />
     <link rel="canonical" href="https://nathancoleman.dev/projects.html" />
@@ -15,7 +15,7 @@
     <meta property="og:title" content="Projects | Nathan Coleman" />
     <meta
       property="og:description"
-      content="Two consumer products I founded and two pieces of enterprise infrastructure."
+      content="Two consumer products I founded and three pieces of enterprise infrastructure."
     />
     <meta name="twitter:card" content="summary" />
     <link rel="icon" type="image/svg+xml" href="favicon.svg" />
@@ -39,16 +39,13 @@
     <header class="site-header">
       <nav class="nav-inner" aria-label="Primary">
         <a href="index.html" class="nav-logo">
-          <svg class="logo-mark" viewBox="0 0 64 64" aria-hidden="true">
-            <defs>
-              <linearGradient id="logoGrad" x1="0" y1="0" x2="1" y2="1">
-                <stop offset="0" stop-color="#1155cc" />
-                <stop offset="1" stop-color="#0096ff" />
-              </linearGradient>
-            </defs>
-            <rect width="64" height="64" rx="14" fill="url(#logoGrad)" />
-            <path d="M19 45V19h5.6l15 17.4V19H45v26h-5.6l-15-17.4V45H19Z" fill="#fff" />
-          </svg>
+          <img
+            class="logo-img"
+            src="images/nathan.png"
+            alt="Nathan Coleman"
+            width="32"
+            height="32"
+          />
           <span>Nathan Coleman</span>
         </a>
         <div class="nav-links">
@@ -110,9 +107,9 @@
       <section>
         <div class="section-header entrance">
           <p class="section-label">Projects</p>
-          <h1 class="section-title">Four worth talking about.</h1>
+          <h1 class="section-title">Five worth talking about.</h1>
           <p class="section-intro">
-            Two consumer products I founded and ran, and two pieces of enterprise
+            Two consumer products I founded and ran, and three pieces of enterprise
             infrastructure that regulated customers depend on every day.
           </p>
         </div>
@@ -121,21 +118,8 @@
           <!-- ============ MUSIC LEAGUE ============ -->
           <article class="project-card entrance entrance-d1" id="music-league">
             <div class="project-aside">
-              <div class="project-glyph" aria-hidden="true">
-                <svg
-                  width="26"
-                  height="26"
-                  viewBox="0 0 24 24"
-                  fill="none"
-                  stroke="currentColor"
-                  stroke-width="2"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                >
-                  <path d="M9 18V5l12-2v13" />
-                  <circle cx="6" cy="18" r="3" />
-                  <circle cx="18" cy="16" r="3" />
-                </svg>
+              <div class="project-mark">
+                <img src="images/music-league.png" alt="Music League app icon" width="56" height="56" />
               </div>
               <p class="project-kicker">2016 &ndash; 2025</p>
               <ul class="tag-list">
@@ -246,22 +230,8 @@
           <!-- ============ MIXTAPE HERO ============ -->
           <article class="project-card reveal" id="mixtape-hero">
             <div class="project-aside">
-              <div class="project-glyph" aria-hidden="true">
-                <svg
-                  width="26"
-                  height="26"
-                  viewBox="0 0 24 24"
-                  fill="none"
-                  stroke="currentColor"
-                  stroke-width="2"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                >
-                  <rect x="2" y="5" width="20" height="14" rx="3" />
-                  <circle cx="8" cy="12" r="2.5" />
-                  <circle cx="16" cy="12" r="2.5" />
-                  <path d="M10.5 12h3" />
-                </svg>
+              <div class="project-mark project-mark--pad">
+                <img src="images/mixtape-hero.png" alt="Mixtape Hero app icon" width="56" height="56" />
               </div>
               <p class="project-kicker">2025 &ndash; present</p>
               <ul class="tag-list">
@@ -270,10 +240,18 @@
                 <li class="tag">Consumer social</li>
                 <li class="tag">Mobile &amp; web</li>
               </ul>
+              <img
+                class="project-shot"
+                src="images/mixtape-hero-app.png"
+                alt="Mixtape Hero app showing music groups and active rounds"
+                width="352"
+                height="720"
+                loading="lazy"
+              />
             </div>
             <div class="project-body">
               <h3>Mixtape Hero</h3>
-              <p class="project-role">Founder</p>
+              <p class="project-role">Co-founder</p>
               <p>
                 Share songs, not algorithms. Mixtape Hero is music discovery through
                 friends instead of feeds: pick a theme, everyone adds a track straight
@@ -326,23 +304,87 @@
             </div>
           </article>
 
+          <!-- ============ PROJECT INFRAGRAPH ============ -->
+          <article class="project-card reveal" id="infragraph">
+            <div class="project-aside">
+              <div class="project-mark project-mark--pad">
+                <img src="images/hashicorp.png" alt="HashiCorp logo" width="56" height="56" />
+              </div>
+              <p class="project-kicker">HashiCorp &middot; 2024 &ndash; 2025</p>
+              <ul class="tag-list">
+                <li class="tag">Knowledge graph</li>
+                <li class="tag">Event-driven APIs</li>
+                <li class="tag">Multi-tenancy</li>
+                <li class="tag">AWS IAM</li>
+                <li class="tag">Hybrid cloud</li>
+              </ul>
+            </div>
+            <div class="project-body">
+              <h3>Project Infragraph</h3>
+              <p class="project-role">Lead engineer</p>
+              <p>
+                A real-time knowledge graph of infrastructure. Infragraph unifies
+                resources, applications, ownership, and policy across hybrid cloud
+                environments into a single queryable source of truth — the normalized
+                context layer that AI agents and automation need before they can safely
+                operate against someone's production estate.
+              </p>
+              <ul class="project-points">
+                <li>
+                  Architected support for first-party and third-party data connectors
+                  hosted both in cloud and on-premise.
+                </li>
+                <li>
+                  Used AWS IAM primitives and storage isolation to host multi-tenant
+                  graph data with a separated control plane and data plane.
+                </li>
+                <li>
+                  Defined the event-driven APIs that let downstream agents and
+                  automation react to infrastructure changes, with the hard constraints
+                  being consistency guarantees and query performance at enterprise
+                  scale.
+                </li>
+                <li>
+                  Led the team to internal alpha ahead of schedule with additional
+                  features, working directly with Product and early customers to shape
+                  the feature set.
+                </li>
+                <li>
+                  Led the engineering team through HashiCorp's acquisition by IBM and
+                  the internal integrations that followed.
+                </li>
+              </ul>
+              <div class="project-links">
+                <a
+                  class="project-link"
+                  href="https://www.hashicorp.com/en/blog/building-intelligent-infrastructure-automation-with-hashicorp"
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  HashiCorp announcement
+                  <svg
+                    width="14"
+                    height="14"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2.5"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    aria-hidden="true"
+                  >
+                    <path d="M7 17 17 7M8 7h9v9" />
+                  </svg>
+                </a>
+              </div>
+            </div>
+          </article>
+
           <!-- ============ BYOK ============ -->
           <article class="project-card reveal" id="byok">
             <div class="project-aside">
-              <div class="project-glyph" aria-hidden="true">
-                <svg
-                  width="26"
-                  height="26"
-                  viewBox="0 0 24 24"
-                  fill="none"
-                  stroke="currentColor"
-                  stroke-width="2"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                >
-                  <circle cx="8" cy="14" r="4" />
-                  <path d="m11 11 8-8 3 3-2 2-2-2-2 2-2-2" />
-                </svg>
+              <div class="project-mark">
+                <img src="images/workiva.png" alt="Workiva logo" width="56" height="56" />
               </div>
               <p class="project-kicker">Workiva &middot; 2019 &ndash; 2022</p>
               <ul class="tag-list">
@@ -411,21 +453,8 @@
           <!-- ============ BLOB STORAGE ============ -->
           <article class="project-card reveal" id="blob-storage">
             <div class="project-aside">
-              <div class="project-glyph" aria-hidden="true">
-                <svg
-                  width="26"
-                  height="26"
-                  viewBox="0 0 24 24"
-                  fill="none"
-                  stroke="currentColor"
-                  stroke-width="2"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                >
-                  <ellipse cx="12" cy="6" rx="8" ry="3" />
-                  <path d="M4 6v6c0 1.66 3.58 3 8 3s8-1.34 8-3V6" />
-                  <path d="M4 12v6c0 1.66 3.58 3 8 3s8-1.34 8-3v-6" />
-                </svg>
+              <div class="project-mark">
+                <img src="images/workiva.png" alt="Workiva logo" width="56" height="56" />
               </div>
               <p class="project-kicker">Workiva &middot; 2017 &ndash; 2019</p>
               <ul class="tag-list">

@@ -3,20 +3,20 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Nathan Coleman | Staff Software Engineer</title>
+    <title>Nathan Coleman | Principal Engineer</title>
     <meta
       name="description"
-      content="Staff engineer in New York building distributed systems and developer platforms. Currently leading an enterprise AI platform at HashiCorp; founder of Music League and Mixtape Hero; previously Workiva."
+      content="Principal engineer in New York working on auth, APIs, and infrastructure at Land id. Co-founder of Mixtape Hero, founder of Music League, previously HashiCorp and Workiva."
     />
     <meta name="robots" content="index, follow" />
     <link rel="canonical" href="https://nathancoleman.dev/" />
     <meta property="og:type" content="website" />
     <meta property="og:site_name" content="Nathan Coleman" />
     <meta property="og:locale" content="en_US" />
-    <meta property="og:title" content="Nathan Coleman | Staff Software Engineer" />
+    <meta property="og:title" content="Nathan Coleman | Principal Engineer" />
     <meta
       property="og:description"
-      content="Staff engineer in New York building distributed systems and developer platforms."
+      content="Principal engineer in New York building distributed systems and developer platforms."
     />
     <meta property="og:url" content="https://nathancoleman.dev/" />
     <meta name="twitter:card" content="summary" />
@@ -33,7 +33,8 @@
         "@context": "https://schema.org",
         "@type": "Person",
         "name": "Nathan Coleman",
-        "jobTitle": "Staff Software Engineer",
+        "jobTitle": "Principal Engineer",
+        "worksFor": { "@type": "Organization", "name": "Land id", "url": "https://id.land" },
         "email": "nathan.coleman@hey.com",
         "url": "https://nathancoleman.dev/",
         "address": {
@@ -63,16 +64,13 @@
     <header class="site-header">
       <nav class="nav-inner" aria-label="Primary">
         <a href="index.html" class="nav-logo">
-          <svg class="logo-mark" viewBox="0 0 64 64" aria-hidden="true">
-            <defs>
-              <linearGradient id="logoGrad" x1="0" y1="0" x2="1" y2="1">
-                <stop offset="0" stop-color="#1155cc" />
-                <stop offset="1" stop-color="#0096ff" />
-              </linearGradient>
-            </defs>
-            <rect width="64" height="64" rx="14" fill="url(#logoGrad)" />
-            <path d="M19 45V19h5.6l15 17.4V19H45v26h-5.6l-15-17.4V45H19Z" fill="#fff" />
-          </svg>
+          <img
+            class="logo-img"
+            src="images/nathan.png"
+            alt="Nathan Coleman"
+            width="32"
+            height="32"
+          />
           <span>Nathan Coleman</span>
         </a>
         <div class="nav-links">
@@ -136,16 +134,17 @@
         <div class="hero-content">
           <div class="hero-badge entrance">
             <span class="status-dot" aria-hidden="true"></span>
-            Staff Engineer at HashiCorp, an IBM company
+            Principal Engineer at Land id
           </div>
           <h1 class="hero-title entrance entrance-d1">
             Hey, I'm <span class="hero-name">Nathan</span>.
           </h1>
           <p class="hero-subtitle entrance entrance-d2">
-            Staff engineer in New York. I build distributed systems and the platforms
-            teams run them on — today an enterprise AI platform at HashiCorp, before
-            that a knowledge graph for hybrid cloud infrastructure. On the side I
-            founded Music League and now Mixtape Hero.
+            Principal engineer in New York. I build distributed systems and the
+            platforms teams run them on — today auth, APIs, and infrastructure at
+            Land id, before that an enterprise AI platform and a knowledge graph for
+            hybrid cloud at HashiCorp. On the side I founded Music League and
+            co-founded Mixtape Hero.
           </p>
           <div class="hero-actions entrance entrance-d3">
             <a href="projects.html" class="btn btn-primary">
@@ -253,12 +252,12 @@
               tends to be invisible when it's going well.
             </p>
             <p>
-              At <strong>HashiCorp</strong> I'm a staff engineer leading discovery for
-              an enterprise AI platform — how customers deploy and govern agentic
-              workloads without handing over the keys. Before that I led
-              <strong>Project Infragraph</strong>, a real-time knowledge graph that
-              unifies resources, ownership, and policy across hybrid cloud, and I led
-              the team through HashiCorp's acquisition by IBM.
+              I'm a principal engineer at <strong>Land id</strong>, working on auth,
+              APIs, and infrastructure. Before that I spent four years at
+              <strong>HashiCorp</strong> — leading discovery for an enterprise AI
+              platform, and before that <strong>Project Infragraph</strong>, a
+              real-time knowledge graph unifying resources, ownership, and policy
+              across hybrid cloud. I led that team through the acquisition by IBM.
             </p>
             <p>
               Alongside all of that I ran <strong>Music League</strong> for nine years
@@ -323,28 +322,15 @@
           <p class="section-label">Selected work</p>
           <h2 class="section-title" id="work-heading">Things I've built.</h2>
           <p class="section-intro">
-            Two consumer products I founded and two pieces of enterprise
+            Two consumer products I founded and three pieces of enterprise
             infrastructure that large regulated customers depend on.
           </p>
         </div>
 
         <div class="work-grid">
           <a class="work-card" href="projects.html#music-league">
-            <div class="project-glyph" aria-hidden="true">
-              <svg
-                width="24"
-                height="24"
-                viewBox="0 0 24 24"
-                fill="none"
-                stroke="currentColor"
-                stroke-width="2"
-                stroke-linecap="round"
-                stroke-linejoin="round"
-              >
-                <path d="M9 18V5l12-2v13" />
-                <circle cx="6" cy="18" r="3" />
-                <circle cx="18" cy="16" r="3" />
-              </svg>
+            <div class="project-mark">
+              <img src="images/music-league.png" alt="Music League app icon" width="56" height="56" loading="lazy" />
             </div>
             <p class="project-kicker">2016 &ndash; 2025</p>
             <h3>Music League</h3>
@@ -361,22 +347,8 @@
           </a>
 
           <a class="work-card" href="projects.html#mixtape-hero">
-            <div class="project-glyph" aria-hidden="true">
-              <svg
-                width="24"
-                height="24"
-                viewBox="0 0 24 24"
-                fill="none"
-                stroke="currentColor"
-                stroke-width="2"
-                stroke-linecap="round"
-                stroke-linejoin="round"
-              >
-                <rect x="2" y="5" width="20" height="14" rx="3" />
-                <circle cx="8" cy="12" r="2.5" />
-                <circle cx="16" cy="12" r="2.5" />
-                <path d="M10.5 12h3" />
-              </svg>
+            <div class="project-mark project-mark--pad">
+              <img src="images/mixtape-hero.png" alt="Mixtape Hero app icon" width="56" height="56" loading="lazy" />
             </div>
             <p class="project-kicker">2025 &ndash; present</p>
             <h3>Mixtape Hero</h3>
@@ -386,27 +358,33 @@
               Apple Music.
             </p>
             <ul class="tag-list">
-              <li class="tag tag-accent">Founder</li>
+              <li class="tag tag-accent">Co-founder</li>
               <li class="tag">Spotify API</li>
               <li class="tag">Apple Music</li>
             </ul>
           </a>
 
+          <a class="work-card" href="projects.html#infragraph">
+            <div class="project-mark project-mark--pad">
+              <img src="images/hashicorp.png" alt="HashiCorp logo" width="56" height="56" loading="lazy" />
+            </div>
+            <p class="project-kicker">HashiCorp &middot; 2024 &ndash; 2025</p>
+            <h3>Project Infragraph</h3>
+            <p>
+              A real-time knowledge graph unifying resources, ownership, and policy
+              across hybrid cloud into one queryable source of truth — the context
+              layer AI agents need before acting on production infrastructure.
+            </p>
+            <ul class="tag-list">
+              <li class="tag tag-accent">Lead engineer</li>
+              <li class="tag">Knowledge graph</li>
+              <li class="tag">Multi-tenancy</li>
+            </ul>
+          </a>
+
           <a class="work-card" href="projects.html#byok">
-            <div class="project-glyph" aria-hidden="true">
-              <svg
-                width="24"
-                height="24"
-                viewBox="0 0 24 24"
-                fill="none"
-                stroke="currentColor"
-                stroke-width="2"
-                stroke-linecap="round"
-                stroke-linejoin="round"
-              >
-                <circle cx="8" cy="14" r="4" />
-                <path d="m11 11 8-8 3 3-2 2-2-2-2 2-2-2" />
-              </svg>
+            <div class="project-mark">
+              <img src="images/workiva.png" alt="Workiva logo" width="56" height="56" loading="lazy" />
             </div>
             <p class="project-kicker">Workiva &middot; 2019 &ndash; 2022</p>
             <h3>Bring Your Own Key</h3>
@@ -423,21 +401,8 @@
           </a>
 
           <a class="work-card" href="projects.html#blob-storage">
-            <div class="project-glyph" aria-hidden="true">
-              <svg
-                width="24"
-                height="24"
-                viewBox="0 0 24 24"
-                fill="none"
-                stroke="currentColor"
-                stroke-width="2"
-                stroke-linecap="round"
-                stroke-linejoin="round"
-              >
-                <ellipse cx="12" cy="6" rx="8" ry="3" />
-                <path d="M4 6v6c0 1.66 3.58 3 8 3s8-1.34 8-3V6" />
-                <path d="M4 12v6c0 1.66 3.58 3 8 3s8-1.34 8-3v-6" />
-              </svg>
+            <div class="project-mark">
+              <img src="images/workiva.png" alt="Workiva logo" width="56" height="56" loading="lazy" />
             </div>
             <p class="project-kicker">Workiva &middot; 2017 &ndash; 2019</p>
             <h3>Encrypted Blob Storage</h3>
@@ -466,22 +431,45 @@
           <article class="timeline-org">
             <div class="org-head">
               <h3>
-                <a href="https://www.hashicorp.com/" target="_blank" rel="noreferrer"
-                  >HashiCorp</a
-                >
+                <a href="https://id.land" target="_blank" rel="noreferrer">Land id</a>
               </h3>
-              <p class="org-meta">An IBM company &middot; 2022 &ndash; Present</p>
+              <p class="org-meta">2026 &ndash; Present</p>
+              <p class="org-blurb">
+                Interactive property mapping for real estate, land, and conservation.
+              </p>
             </div>
             <div class="role-list">
               <div class="role current">
                 <div class="role-title">
-                  <h4>Staff Engineer, Enterprise AI Platform</h4>
+                  <h4>Principal Engineer</h4>
                   <span class="role-years">2026 &ndash; Present</span>
                 </div>
                 <ul>
+                  <li>Working on auth, APIs, and infrastructure.</li>
+                </ul>
+              </div>
+            </div>
+          </article>
+
+          <article class="timeline-org">
+            <div class="org-head">
+              <h3>
+                <a href="https://www.hashicorp.com/" target="_blank" rel="noreferrer"
+                  >HashiCorp</a
+                >
+              </h3>
+              <p class="org-meta">An IBM company &middot; 2022 &ndash; 2026</p>
+            </div>
+            <div class="role-list">
+              <div class="role">
+                <div class="role-title">
+                  <h4>Staff Engineer, Enterprise AI Platform</h4>
+                  <span class="role-years">2026</span>
+                </div>
+                <ul>
                   <li>
-                    Leading discovery and prototyping for a platform that lets
-                    customers securely deploy and manage agentic workloads, as either a
+                    Led discovery and prototyping for a platform to let customers
+                    securely deploy and manage agentic workloads, as either a
                     multi-tenant managed service or a single-tenant on-premise
                     deployment.
                   </li>

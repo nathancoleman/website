@@ -6,7 +6,7 @@
     <title>About | Nathan Coleman</title>
     <meta
       name="description"
-      content="A decade-plus of distributed systems, platform engineering, and technical leadership — HashiCorp, Music League, Workiva, Auburn University."
+      content="A decade-plus of distributed systems, platform engineering, and technical leadership — Land id, HashiCorp, Music League, Workiva, Auburn University."
     />
     <meta name="robots" content="index, follow" />
     <link rel="canonical" href="https://nathancoleman.dev/about.html" />
@@ -39,16 +39,13 @@
     <header class="site-header">
       <nav class="nav-inner" aria-label="Primary">
         <a href="index.html" class="nav-logo">
-          <svg class="logo-mark" viewBox="0 0 64 64" aria-hidden="true">
-            <defs>
-              <linearGradient id="logoGrad" x1="0" y1="0" x2="1" y2="1">
-                <stop offset="0" stop-color="#1155cc" />
-                <stop offset="1" stop-color="#0096ff" />
-              </linearGradient>
-            </defs>
-            <rect width="64" height="64" rx="14" fill="url(#logoGrad)" />
-            <path d="M19 45V19h5.6l15 17.4V19H45v26h-5.6l-15-17.4V45H19Z" fill="#fff" />
-          </svg>
+          <img
+            class="logo-img"
+            src="images/nathan.png"
+            alt="Nathan Coleman"
+            width="32"
+            height="32"
+          />
           <span>Nathan Coleman</span>
         </a>
         <div class="nav-links">
@@ -119,8 +116,9 @@
         <div class="about-grid entrance entrance-d1">
           <div class="about-copy">
             <p>
-              I'm a staff software engineer based in New York. Most of my career has
-              been spent on infrastructure that other engineers build on top of —
+              I'm a principal software engineer based in New York, working on auth,
+              APIs, and infrastructure at <strong>Land id</strong>. Most of my career
+              has been spent on infrastructure that other engineers build on top of —
               storage layers, calculation engines, resource models, encryption
               boundaries, knowledge graphs. The through-line is correctness under
               pressure: systems where being wrong quietly is far worse than being
@@ -151,19 +149,19 @@
               HashiCorp's acquisition by IBM.
             </p>
             <p>
-              Today I'm leading discovery and prototyping for an enterprise AI
-              platform: how customers deploy and manage agentic workloads securely,
-              whether as a multi-tenant managed service or single-tenant on-premise.
-              The interesting problems are the isolation model — single-use pods per
-              invocation, per-tenant namespaces — and credential handling through Vault
-              and EKS Pod Identity.
+              My last stretch at HashiCorp was leading discovery and prototyping for
+              an enterprise AI platform: how customers deploy and manage agentic
+              workloads securely, whether as a multi-tenant managed service or
+              single-tenant on-premise. The interesting problems were the isolation
+              model — single-use pods per invocation, per-tenant namespaces — and
+              credential handling through Vault and EKS Pod Identity.
             </p>
             <p>
               Running <strong>Music League</strong> solo for nine years taught me the
               other half of the job. Hundreds of thousands of users across six
               continents, one engineer, 24/7 on-call, and every decision about
               infrastructure cost, hiring, support, and partnerships landing on my
-              desk. I sold my ownership stake in 2025 and started
+              desk. I sold my ownership stake in 2025 and co-founded
               <strong>Mixtape Hero</strong> to build the idea again with everything I
               learned the first time.
             </p>
@@ -173,8 +171,8 @@
             <div class="skill-group">
               <h3>Currently</h3>
               <ul class="tag-list">
-                <li class="tag tag-accent">Staff Engineer, HashiCorp</li>
-                <li class="tag tag-accent">Founder, Mixtape Hero</li>
+                <li class="tag tag-accent">Principal Engineer, Land id</li>
+                <li class="tag tag-accent">Co-founder, Mixtape Hero</li>
               </ul>
             </div>
             <div class="skill-group">
@@ -242,6 +240,31 @@
         </div>
 
         <div class="timeline">
+          <!-- Land id -->
+          <article class="timeline-org">
+            <div class="org-head">
+              <h3>
+                <a href="https://id.land" target="_blank" rel="noreferrer">Land id</a>
+              </h3>
+              <p class="org-meta">2026 &ndash; Present</p>
+              <p class="org-blurb">
+                Interactive property mapping for real estate, land, and conservation.
+              </p>
+            </div>
+            <div class="role-list">
+              <div class="role current">
+                <div class="role-title">
+                  <h4>Principal Engineer</h4>
+                  <span class="role-years">2026 &ndash; Present</span>
+                </div>
+                <ul>
+                  <li>Working on auth, APIs, and infrastructure.</li>
+                  <!-- TODO: fill in specifics — systems owned, scope, notable projects. -->
+                </ul>
+              </div>
+            </div>
+          </article>
+
           <!-- HashiCorp -->
           <article class="timeline-org">
             <div class="org-head">
@@ -250,26 +273,25 @@
                   >HashiCorp</a
                 >
               </h3>
-              <p class="org-meta">An IBM company &middot; 2022 &ndash; Present</p>
+              <p class="org-meta">An IBM company &middot; 2022 &ndash; 2026</p>
               <p class="org-blurb">
                 Infrastructure automation, service networking, and secrets management.
               </p>
             </div>
             <div class="role-list">
-              <div class="role current">
+              <div class="role">
                 <div class="role-title">
                   <h4>Staff Engineer, Enterprise AI Platform</h4>
-                  <span class="role-years">2026 &ndash; Present</span>
+                  <span class="role-years">2026</span>
                 </div>
                 <ul>
                   <li>
-                    Leading discovery and prototyping for a platform that will let
-                    customers securely deploy and manage agentic workloads as a
-                    multi-tenant managed service or a single-tenant on-premise
-                    deployment.
+                    Led discovery and prototyping for a platform to let customers
+                    securely deploy and manage agentic workloads as a multi-tenant
+                    managed service or a single-tenant on-premise deployment.
                   </li>
                   <li>
-                    Prototyping the agent execution model around Kubernetes-native
+                    Prototyped the agent execution model around Kubernetes-native
                     isolation — single-use pods per invocation, per-tenant namespaces —
                     with credential handling via Vault and EKS Pod Identity.
                   </li>
@@ -278,9 +300,9 @@
                       href="https://www.hashicorp.com/en/blog/building-intelligent-infrastructure-automation-with-hashicorp"
                       target="_blank"
                       rel="noreferrer"
-                      >Building on Project Infragraph</a
+                      >Built on Project Infragraph</a
                     >
-                    so agents can react to infrastructure events and code changes
+                    so agents could react to infrastructure events and code changes
                     across hybrid cloud environments.
                   </li>
                 </ul>
@@ -396,7 +418,7 @@
             <div class="role-list">
               <div class="role current">
                 <div class="role-title">
-                  <h4>Founder</h4>
+                  <h4>Co-founder</h4>
                   <span class="role-years">2025 &ndash; Present</span>
                 </div>
                 <ul>
