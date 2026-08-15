@@ -1,4 +1,4 @@
-# nathancoleman.com
+# nathancoleman.dev
 
 Personal site. Plain HTML, CSS, and a few lines of JavaScript — no build step, no
 dependencies, no framework. Every file in this repo is the file that ships.
