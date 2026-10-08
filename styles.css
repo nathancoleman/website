@@ -1048,8 +1048,7 @@ section {
 /* --- writing ---------------------------------------------- */
 
 .section-intro a,
-.prose a,
-.post-source a {
+.prose a {
   color: var(--accent);
   text-decoration: underline;
   text-decoration-color: rgba(17, 85, 204, 0.3);
@@ -1059,8 +1058,7 @@ section {
 }
 
 .section-intro a:hover,
-.prose a:hover,
-.post-source a:hover {
+.prose a:hover {
   color: var(--accent-hover);
   text-decoration-color: var(--accent-bright);
 }
@@ -1295,19 +1293,13 @@ section {
   color: var(--accent);
 }
 
-.post-source {
-  margin-top: var(--space-2xl);
-  padding-top: var(--space-lg);
-  border-top: 1px solid var(--border);
-  font-size: 0.85rem;
-  color: var(--text-tertiary);
-}
-
 .post-nav {
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: var(--space-md);
-  margin-top: var(--space-xl);
+  margin-top: var(--space-2xl);
+  padding-top: var(--space-xl);
+  border-top: 1px solid var(--border);
 }
 
 .post-nav-link {
