@@ -147,10 +147,10 @@
               <p class="project-kicker">Land id &middot; 2026 &ndash; present</p>
               <ul class="tag-list">
                 <li class="tag">GraphQL</li>
-                <li class="tag">Public API</li>
                 <li class="tag">Auth</li>
-                <li class="tag">Developer docs</li>
-                <li class="tag">Maps</li>
+                <li class="tag">Rate limiting</li>
+                <li class="tag">Public API</li>
+                <li class="tag">UI</li>
               </ul>
             </div>
             <div class="project-body">
@@ -164,22 +164,22 @@
               </p>
               <ul class="project-points">
                 <li>
-                  A single GraphQL endpoint covering Property Tours, Maps,
-                  organizations, and teams, with queries to read one or list many and
-                  mutations to create, update, and delete.
+                  Built the GraphQL facade: one public endpoint covering Property
+                  Tours, Maps, organizations, and teams, sitting in front of the same
+                  services that power id.land.
                 </li>
                 <li>
-                  Property Tours can be generated from a location, a street address, or
-                  an existing map, then edited and activated once they're ready to
-                  share.
+                  Built auth for third-party integrations, so customers' own
+                  applications can call the API with access tokens.
                 </li>
                 <li>
-                  Token-based access for integrations, with authentication, pagination,
-                  errors, versioning, and rate and query limits documented up front.
+                  Built rate limiting, with rate and query limits published in the docs
+                  up front.
                 </li>
+                <li>Built the developer-facing UI.</li>
                 <li>
-                  Getting-started guides with working examples in Go, Python, and
-                  JavaScript.
+                  Ships with getting-started guides and working examples in Go, Python,
+                  and JavaScript.
                 </li>
               </ul>
               <div class="project-links">
