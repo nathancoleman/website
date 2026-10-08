@@ -6,7 +6,7 @@
     <title>Projects | Nathan Coleman</title>
     <meta
       name="description"
-      content="Music League, Mixtape Hero, Project Infragraph, Bring Your Own Key, and encrypted blob storage — two consumer products and three pieces of enterprise infrastructure."
+      content="The Land id API, Music League, Mixtape Hero, Project Infragraph, Bring Your Own Key, and encrypted blob storage — a public developer API, two consumer products, and three pieces of enterprise infrastructure."
     />
     <meta name="robots" content="index, follow" />
     <link rel="canonical" href="https://nathancoleman.dev/projects.html" />
@@ -15,7 +15,7 @@
     <meta property="og:title" content="Projects | Nathan Coleman" />
     <meta
       property="og:description"
-      content="Two consumer products I founded and three pieces of enterprise infrastructure."
+      content="A public developer API, two consumer products I founded, and three pieces of enterprise infrastructure."
     />
     <meta name="twitter:card" content="summary" />
     <link rel="icon" type="image/svg+xml" href="favicon.svg" />
@@ -129,16 +129,87 @@
       <section>
         <div class="section-header entrance">
           <p class="section-label">Projects</p>
-          <h1 class="section-title">Five worth talking about.</h1>
+          <h1 class="section-title">Six worth talking about.</h1>
           <p class="section-intro">
-            Two consumer products I founded and ran, and three pieces of enterprise
-            infrastructure that regulated customers depend on every day.
+            The public API I'm working on now, two consumer products I founded and
+            ran, and three pieces of enterprise infrastructure that regulated
+            customers depend on every day.
           </p>
         </div>
 
         <div class="project-list">
+          <!-- ============ LAND ID API ============ -->
+          <article class="project-card entrance entrance-d1" id="land-id-api">
+            <div class="project-aside">
+              <div class="project-mark">
+                <img src="images/land-id.svg" alt="Land id logo" width="56" height="56" />
+              </div>
+              <p class="project-kicker">Land id &middot; 2026 &ndash; present</p>
+              <ul class="tag-list">
+                <li class="tag">GraphQL</li>
+                <li class="tag">Public API</li>
+                <li class="tag">Auth</li>
+                <li class="tag">Developer docs</li>
+                <li class="tag">Maps</li>
+              </ul>
+            </div>
+            <div class="project-body">
+              <h3>Land id API</h3>
+              <p class="project-role">Principal engineer</p>
+              <p>
+                Land id's public GraphQL API. Customers can create, activate, and
+                manage Property Tours, Maps, and their organization's teams from their
+                own applications, working from the same data that powers id.land
+                rather than a separate export.
+              </p>
+              <ul class="project-points">
+                <li>
+                  A single GraphQL endpoint covering Property Tours, Maps,
+                  organizations, and teams, with queries to read one or list many and
+                  mutations to create, update, and delete.
+                </li>
+                <li>
+                  Property Tours can be generated from a location, a street address, or
+                  an existing map, then edited and activated once they're ready to
+                  share.
+                </li>
+                <li>
+                  Token-based access for integrations, with authentication, pagination,
+                  errors, versioning, and rate and query limits documented up front.
+                </li>
+                <li>
+                  Getting-started guides with working examples in Go, Python, and
+                  JavaScript.
+                </li>
+              </ul>
+              <div class="project-links">
+                <a
+                  class="project-link"
+                  href="https://developer.id.land/"
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  developer.id.land
+                  <svg
+                    width="14"
+                    height="14"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2.5"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    aria-hidden="true"
+                  >
+                    <path d="M7 17 17 7M8 7h9v9" />
+                  </svg>
+                </a>
+              </div>
+            </div>
+          </article>
+
           <!-- ============ MUSIC LEAGUE ============ -->
-          <article class="project-card entrance entrance-d1" id="music-league">
+          <article class="project-card reveal" id="music-league">
             <div class="project-aside">
               <div class="project-mark">
                 <img src="images/music-league.png" alt="Music League app icon" width="56" height="56" />
