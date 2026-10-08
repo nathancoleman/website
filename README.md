@@ -9,10 +9,13 @@ dependencies, no framework. Every file in this repo is the file that ships.
 index.html      Home — hero, about, pull quote, selected work, condensed experience
 about.html      Long-form bio, full experience timeline, education
 projects.html   Music League, Mixtape Hero, BYOK, Encrypted Blob Storage
+writing.html    Index of essays, newest first
+writing/        One page per essay (imported from world.hey.com/nathan.coleman)
 styles.css      All styling. Design tokens live in :root at the top.
 main.js         Scroll-reveal only. The site is fully readable without it.
 favicon.svg     Monogram mark.
-images/         Nav avatar, project marks, and the Mixtape Hero app screenshot.
+images/         Nav avatar, project marks, the Mixtape Hero app screenshot, and
+                images/writing/ for images embedded in essays.
 ```
 
 ## Images
@@ -47,8 +50,13 @@ For GitHub Pages: push to `main`, then enable Pages from the repository root.
   the palette there, not in individual rules.
 - The accent blues (`#1155cc`, `#0096ff`) are pulled from the resume.
 - Fonts are Space Grotesk (display) and Manrope (body), loaded from Google Fonts.
-- Header, footer, and nav markup are duplicated across the three pages. That is
-  deliberate — the cost of keeping three copies in sync is lower than the cost of
-  introducing a template step. Edit all three when changing nav or footer.
+- Header, footer, and nav markup are duplicated across every page, including
+  `writing.html` and each page in `writing/`. That is deliberate — the cost of
+  keeping the copies in sync is lower than the cost of introducing a template
+  step. Edit all of them when changing nav or footer. Pages in `writing/` use
+  `../` for every local link and asset.
+- To add an essay: copy an existing page in `writing/`, swap the title, date,
+  meta tags, and body, update the older/newer links on its neighbours, and add
+  an entry at the top of the list in `writing.html`.
 - `prefers-reduced-motion` and print styles are handled at the bottom of
   `styles.css`.

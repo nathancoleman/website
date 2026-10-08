@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en" class="no-js">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>On Shipping In Iterations | Nathan Coleman</title>
+    <meta
+      name="description"
+      content="Plan the smallest valuable version. Build it. Test it. Release it. Repeat."
+    />
+    <meta name="robots" content="index, follow" />
+    <link rel="canonical" href="https://nathancoleman.dev/writing/on-shipping-in-iterations.html" />
+    <meta property="og:type" content="article" />
+    <meta property="og:site_name" content="Nathan Coleman" />
+    <meta property="og:title" content="On Shipping In Iterations | Nathan Coleman" />
+    <meta
+      property="og:description"
+      content="Plan the smallest valuable version. Build it. Test it. Release it. Repeat."
+    />
+    <meta property="og:url" content="https://nathancoleman.dev/writing/on-shipping-in-iterations.html" />
+    <meta name="twitter:card" content="summary" />
+    <meta property="article:published_time" content="2024-02-22" />
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "BlogPosting",
+        "headline": "On Shipping In Iterations",
+        "datePublished": "2024-02-22",
+        "author": {
+          "@type": "Person",
+          "name": "Nathan Coleman",
+          "url": "https://nathancoleman.dev/"
+        },
+        "url": "https://nathancoleman.dev/writing/on-shipping-in-iterations.html"
+      }
+    </script>
+    <link rel="icon" type="image/svg+xml" href="../favicon.svg" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../styles.css" />
+  </head>
+  <body>
+    <a class="skip-link" href="#main">Skip to content</a>
+
+    <div class="bg-ambient" aria-hidden="true">
+      <div class="blob blob-1"></div>
+      <div class="blob blob-2"></div>
+      <div class="blob blob-3"></div>
+    </div>
+
+    <header class="site-header">
+      <nav class="nav-inner" aria-label="Primary">
+        <a href="../index.html" class="nav-logo">
+          <img
+            class="logo-img"
+            src="../images/nathan.png"
+            alt="Nathan Coleman"
+            width="32"
+            height="32"
+          />
+          <span>Nathan Coleman</span>
+        </a>
+        <div class="nav-links">
+          <div class="nav-pages" id="nav-menu">
+            <a href="../index.html" class="nav-link">Home</a>
+            <a href="../about.html" class="nav-link">About</a>
+            <a href="../projects.html" class="nav-link">Projects</a>
+            <a href="../writing.html" class="nav-link active">Writing</a>
+          </div>
+          <span class="nav-divider" aria-hidden="true"></span>
+          <a
+            href="https://github.com/nathancoleman"
+            target="_blank"
+            rel="noreferrer"
+            class="nav-link nav-link--icon"
+            aria-label="GitHub"
+          >
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+              <path
+                d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0 0 24 12c0-6.63-5.37-12-12-12Z"
+              />
+            </svg>
+          </a>
+          <a
+            href="https://www.linkedin.com/in/nathandcoleman/"
+            target="_blank"
+            rel="noreferrer"
+            class="nav-link nav-link--icon"
+            aria-label="LinkedIn"
+          >
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+              <path
+                d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286ZM5.337 7.433a2.062 2.062 0 0 1-2.063-2.065 2.064 2.064 0 1 1 2.063 2.065Zm1.782 13.019H3.555V9h3.564v11.452ZM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003Z"
+              />
+            </svg>
+          </a>
+          <a
+            href="mailto:nathan.coleman@hey.com"
+            class="nav-link nav-link--icon"
+            aria-label="Email Nathan"
+          >
+            <svg
+              width="20"
+              height="20"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              aria-hidden="true"
+            >
+              <rect x="2" y="4" width="20" height="16" rx="2" />
+              <path d="m2 7 10 6 10-6" />
+            </svg>
+          </a>
+          <button
+            class="nav-toggle"
+            type="button"
+            aria-expanded="false"
+            aria-controls="nav-menu"
+            aria-label="Open navigation menu"
+          >
+            <svg
+              width="20"
+              height="20"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+              stroke-linecap="round"
+              aria-hidden="true"
+            >
+              <path d="M3 6h18M3 12h18M3 18h18" />
+            </svg>
+          </button>
+        </div>
+      </nav>
+    </header>
+
+    <main id="main" class="page-shell">
+      <article class="post">
+        <header class="post-header entrance">
+          <a class="back-link" href="../writing.html">&larr; All writing</a>
+          <h1 class="post-title">On Shipping In Iterations</h1>
+          <p class="post-meta">
+            <time datetime="2024-02-22">February 22, 2024</time>
+          </p>
+        </header>
+
+        <div class="prose entrance entrance-d1">
+          <p>As a software engineer or engineering leader, do you enjoy</p>
+          <ul>
+            <li>trying to predict the <em>unknown</em> unknowns up front when planning a project?</li>
+            <li>constant questions from others about the status of your team's project?</li>
+            <li>finishing your day or week feeling like you haven't accomplished anything?</li>
+            <li>being asked to review a pull request that touches thousands of lines of code?</li>
+            <li>trying to test a pull request that touches thousands of lines of code?</li>
+            <li>the product changing underneath you while you attempt to land that pull request?</li>
+            <li>incurring massive risk when merging a new feature or refactor?</li>
+            <li>providing no value at all to your customer unless you finish 100% of the project in time for release?</li>
+            <li>projects that seem to go on forever?</li>
+          </ul>
+          <p>I've been there &ndash; it's not fun.</p>
+          <p>
+            <strong><em>Plan</em></strong> the smallest valuable version.<br />
+            <strong><em>Build</em></strong> that version.<br />
+            <strong><em>Test</em></strong> that version.<br />
+            <strong><em>Release</em></strong> that version.<br />
+            <strong>Repeat</strong>.
+          </p>
+          <p>
+            Your customers will thank you.<br />
+            Your team will thank you.<br />
+            Your future self will thank you.
+          </p>
+        </div>
+
+        <p class="post-source">
+          Originally published on
+          <a href="https://world.hey.com/nathan.coleman/on-shipping-in-iterations-d542ac6e" target="_blank" rel="noreferrer">HEY World</a>.
+        </p>
+
+        <nav class="post-nav" aria-label="More writing">
+          <span></span>
+          <a class="post-nav-link post-nav-link--next" href="the-journey-or-the-destination.html">
+            <span class="post-nav-dir">Newer &rarr;</span>
+            <span class="post-nav-title">The Journey Or The Destination</span>
+          </a>
+        </nav>
+      </article>
+    </main>
+
+    <footer class="site-footer">
+      <div class="footer-inner">
+        <p>&copy; 2026 Nathan Coleman</p>
+        <div class="footer-links">
+          <a href="https://github.com/nathancoleman" target="_blank" rel="noreferrer"
+            >GitHub</a
+          >
+          <a
+            href="https://www.linkedin.com/in/nathandcoleman/"
+            target="_blank"
+            rel="noreferrer"
+            >LinkedIn</a
+          >
+          <a href="mailto:nathan.coleman@hey.com">Email</a>
+        </div>
+      </div>
+    </footer>
+
+    <script src="../main.js"></script>
+  </body>
+</html>
