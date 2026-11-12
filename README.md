@@ -8,7 +8,7 @@ dependencies, no framework. Every file in this repo is the file that ships.
 ```
 index.html      Home — hero, about, pull quote, selected work, condensed experience
 about.html      Long-form bio, full experience timeline, education
-projects.html   Music League, Mixtape Hero, BYOK, Encrypted Blob Storage
+projects.html   Music League, Mixtape Hero, BYOK, Encrypted Blob Storage, Ion
 writing.html    Index of essays, newest first
 writing/        One page per essay (imported from world.hey.com/nathan.coleman)
 styles.css      All styling. Design tokens live in :root at the top.
@@ -22,8 +22,8 @@ images/         Nav avatar, project marks, the Mixtape Hero app screenshot, and
 
 `images/nathan.png` is the nav avatar. The project marks are the real app icons
 and company logos: `music-league.png` (App Store icon), `mixtape-hero.png`,
-`hashicorp.png`, `workiva.png`. `mixtape-hero-app.png` is the product screenshot
-on the projects page.
+`ion.png`, `hashicorp.png`, `workiva.png`. `mixtape-hero-app.png` and `ion-app.png`
+are the product screenshots on the projects page.
 
 The HashiCorp and Workiva marks are third-party trademarks, used here to
 identify past employers. Swap them for neutral glyphs if that ever becomes a
