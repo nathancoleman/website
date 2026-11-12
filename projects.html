@@ -6,7 +6,7 @@
     <title>Projects | Nathan Coleman</title>
     <meta
       name="description"
-      content="The Land id API, Music League, Mixtape Hero, Project Infragraph, Bring Your Own Key, and encrypted blob storage — a public developer API, two consumer products, and three pieces of enterprise infrastructure."
+      content="The Land id API, Music League, Mixtape Hero, Project Infragraph, Bring Your Own Key, encrypted blob storage, and Ion — a public developer API, two consumer products, three pieces of enterprise infrastructure, and a personal iOS app."
     />
     <meta name="robots" content="index, follow" />
     <link rel="canonical" href="https://nathancoleman.dev/projects.html" />
@@ -15,7 +15,7 @@
     <meta property="og:title" content="Projects | Nathan Coleman" />
     <meta
       property="og:description"
-      content="A public developer API, two consumer products I founded, and three pieces of enterprise infrastructure."
+      content="A public developer API, two consumer products I founded, three pieces of enterprise infrastructure, and a personal iOS app."
     />
     <meta name="twitter:card" content="summary" />
     <link rel="icon" type="image/svg+xml" href="favicon.svg" />
@@ -130,11 +130,11 @@
       <section>
         <div class="section-header entrance">
           <p class="section-label">Projects</p>
-          <h1 class="section-title">Six worth talking about.</h1>
+          <h1 class="section-title">Seven worth talking about.</h1>
           <p class="section-intro">
             The public API I'm working on now, two consumer products I founded and
-            ran, and three pieces of enterprise infrastructure that regulated
-            customers depend on every day.
+            ran, three pieces of enterprise infrastructure that regulated customers
+            depend on every day, and an app I built for my own car.
           </p>
         </div>
 
@@ -637,6 +637,85 @@
                   rel="noreferrer"
                 >
                   Related: Linking
+                  <svg
+                    width="14"
+                    height="14"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2.5"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    aria-hidden="true"
+                  >
+                    <path d="M7 17 17 7M8 7h9v9" />
+                  </svg>
+                </a>
+              </div>
+            </div>
+          </article>
+
+          <!-- ============ ION ============ -->
+          <article class="project-card reveal" id="ion">
+            <div class="project-aside">
+              <div class="project-mark">
+                <img src="images/ion.png" alt="Ion app icon" width="56" height="56" />
+              </div>
+              <p class="project-kicker">Personal project &middot; 2026</p>
+              <ul class="tag-list">
+                <li class="tag">SwiftUI</li>
+                <li class="tag">Live Activities</li>
+                <li class="tag">WidgetKit</li>
+                <li class="tag">App Intents</li>
+                <li class="tag">Python / OpenCV</li>
+              </ul>
+              <img
+                class="project-shot"
+                src="images/ion-app.png"
+                alt="Ion iOS app showing an IONIQ 5 with climate, charging, lights and camera controls"
+                width="352"
+                height="765"
+                loading="lazy"
+              />
+            </div>
+            <div class="project-body">
+              <h3>Ion</h3>
+              <p class="project-role">Designer and engineer</p>
+              <p>
+                A Tesla-style iOS app for my Hyundai IONIQ 5. Hyundai's own app is slow
+                and buried in menus; Ion puts lock, climate, charging, lights, and the
+                car's cameras one tap away, with the car itself front and center in its
+                own paint color.
+              </p>
+              <ul class="project-points">
+                <li>
+                  Talks to Hyundai's Bluelink service. Commands update the screen right
+                  away, then confirm against Hyundai's cached status so the car's modem
+                  isn't woken for every check.
+                </li>
+                <li>
+                  Charging history, battery preconditioning, and valet mode come from
+                  mapping the endpoints Hyundai's own app uses.
+                </li>
+                <li>
+                  Live Activities for climate and charging, Home and Lock Screen
+                  widgets, Control Center controls, and Siri shortcuts.
+                </li>
+                <li>
+                  Three themes, each in light and dark: Ion in five colors, a pencil
+                  Sketch, and a Pastel painting. The car artwork comes from a small
+                  Python and OpenCV pipeline that recolors, sketches, and paints the
+                  studio photos.
+                </li>
+              </ul>
+              <div class="project-links">
+                <a
+                  class="project-link"
+                  href="https://github.com/nathancoleman/ion"
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  github.com/nathancoleman/ion
                   <svg
                     width="14"
                     height="14"
